@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+   <html lang="en">
+    <head>
+    <title>WE &#10084; TESLA!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+   <body>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   </body>
+<form class="text-center border border-light p-5" action="app.py" method = "get">
+    <p class="h4 mb-4">List Your Car</p>
+    <!-- Name -->
+    <input type="text" id="Brand" name="Brand" class="form-control mb-4" placeholder="Brand">
+    <!-- Email -->
+    <input type="text" id="Model" name="Model" class="form-control mb-4" placeholder="Model">
+    <!-- Subject -->
+        <label>Fuel Type</label>
+    <select class="browser-default custom-select mb-4" name="Fuel_type">
+        <option value="" enabled>Choose option</option>
+        <option value="1" >Petrol</option>
+        <option value="2">Diesel</option>
+        <option value="3">Hybrid</option>
+        <option value="4">Electric</option>
+    </select>
+
+    <label>Condition</label>
+    <select class="browser-default custom-select mb-4" name="Condition">
+        <option value="" enabled>Choose option</option>
+        <option value="1" >Mint</option>
+        <option value="2">Slight damage</option>
+        <option value="3">moderate damage</option>
+        <option value="4">Heavy damage</option>
+        <option value="5">Written off</option>
+    </select>
+
+    <input type="text" id="Seller_name" name = "Seller_name" class="form-control mb-4" placeholder="Your name">
+    <input type="text" id="Price" name="Price" class="form-control mb-4" placeholder="Price">
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" type="submit">Send</button>
+</form>
